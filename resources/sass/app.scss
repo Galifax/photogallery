@@ -1,1 +1,506 @@
-//
+// main
+.main-btn {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #616165;
+    border-color: #616165;
+    font-size: 14px;
+    padding: 17px 29px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: .3s;
+    line-height: 18px;
+    border: 1px solid;
+    letter-spacing: .56px;
+    cursor: pointer;
+
+}
+
+.main-btn:hover,
+.main-btn:active,
+.main-btn:focus {
+    color: #ffffff;
+    background-color: #d1c8bc;
+    border-color: #d1c8bc;
+    outline: none;
+}
+
+.main-header{
+    background-color: #343437;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+        .header-logo{
+        padding: 15px 0;
+        img{
+
+        }
+    }
+    .main-header-nav {
+    .main-header-list{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        li{    margin-left: 29px;
+            a{
+                padding: 10px;
+                font-size: 12px;
+                line-height: 19px;
+                position: relative;
+                display: block;
+                text-align: left;
+                transition: .3s;
+                z-index: 1;
+                letter-spacing: .48px;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 700;
+                font-style: normal;
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }}
+}
+
+// main
+
+// contact
+.contacts {
+    padding: 50px 0 35px;
+
+    .contact-item {
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+        }
+
+        .contact-list {
+            list-style: none;
+
+            .contact-list-title {
+                font-weight: 300;
+                font-family: 'Roboto Mono', monospace;
+                color: #4d4d51;
+                font-size: 16px;
+                line-height: 1.4;
+                letter-spacing: 0px;
+            }
+
+            .contact-list-item {
+                a {
+                    color: #1e1d24;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #d1c8bc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+form {
+
+    input,
+    textarea {
+        color: #7f7f7f;
+        background-color: #e7e7e7;
+        font-style: normal;
+        font-weight: 400;
+        border: 1px solid #e7e7e7;
+        padding: 24px 15px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        outline: none;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .form-actions {
+        text-align: right;
+    }
+}
+
+// contact
+// index 
+
+.home-header {
+    margin: 0;
+    padding: 0;
+    background-color: #4d4d51;
+    border: none;
+    background-image: url('/img/mt-1300-home-bg1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 80vh;
+
+    .home-header-logo {
+        padding: 15px;
+        margin-top: 10px;
+
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    nav {
+        padding: 15px 0;
+
+        .home-nav-list {
+            padding: none;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+
+            .home-nav-list-item {
+                margin: 15px;
+
+                a {
+                    font-size: 12px;
+                    line-height: 19px;
+                    position: relative;
+                    display: block;
+                    text-align: left;
+                    transition: .3s;
+                    z-index: 1;
+                    letter-spacing: .48px;
+                    padding: 10px;
+                    font-family: 'Roboto Mono', monospace;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #ffffff;
+                    text-transform: uppercase;
+
+                    &:hover,
+                    .active {
+                        color: #d1c8bc;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-header-promo {
+        margin: auto;
+        max-width: 970px;
+        padding: 8vw 15px 8vw 15px;
+
+
+        .home-header-promo-title {
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Roboto Mono', monospace;
+            color: #ffffff;
+            font-size: calc(20px + 5vmin);
+
+            letter-spacing: 14px;
+            margin-bottom: 30px;
+
+            span {
+                font-size: calc(10px + 2vmin);
+                line-height: 100px;
+                letter-spacing: 3px;
+            }
+        }
+
+        .home-header-promo-text {
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Roboto Mono', monospace;
+            color: #ffffff;
+            font-size: calc(10px + 1vmin);
+            line-height: 1.7;
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.subscribe-promo {
+    background: #343437;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 80px;
+
+    .promo-title {
+        line-height: .8;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: 0px;
+        }
+    }
+
+    input {
+        border: 1px solid transparent;
+        padding: 16px 10px;
+        font-size: 16px;
+        line-height: 25px;
+        display: block;
+        width: 100%;
+        color: #ffffff;
+        background-color: #616165;
+        max-width: 548px;
+        margin:40px auto 20px;
+        outline: none;
+        &::placeholder{
+            color: #ffffff;
+        }
+    }
+
+    .main-btn {
+        background-color: #d1c8bc;
+        text-transform: uppercase;
+        &:hover{
+            background-color: #616165;
+        }   
+    }
+}
+
+.index-small-gall{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    .gallery-item{
+        padding-top:16.666%;
+        @media screen and(max-width:768px){
+            padding-top:28%;
+        }
+        @media screen and(max-width:600px){
+            padding-top: 95%;
+        }
+        &:hover {
+            &:before {
+                background-color: rgba(209,200,188,0.8);
+                width: 100%;
+            }
+            img {
+                left: calc(50% - 20px);
+            }
+    
+            .img-title {
+                left: calc(50% - 20px);
+                opacity: 1;
+            }
+        }
+    }
+}
+// index
+
+//gallery
+
+.gallery-page-title {
+    background-image: url('./img/mt-1300-careers-bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    height: 10vw;
+    max-height: 110px;
+    min-height: 91px;
+
+    .title {
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto Mono', monospace;
+        /* color: #7f7f7f; */
+        color: #343437;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.filter-actions{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    padding-top: 80px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto Mono', monospace;
+    color: #1e1d24;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 7px;
+    text-align: center;
+    width: 100%;
+}
+
+/* gallery  */
+.gallery-item {
+    position: relative!important;
+    overflow: hidden;
+    transition: 0.5s;
+    left: auto!important;
+    top: auto!important;
+
+    height: auto!important;
+
+    a {
+        width: 100%;
+        display: block;
+        height: 100%;
+        transition: .7s;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: calc(50% - 20px);
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            min-width: calc(100% + 40px);
+            transform: translate(-50%, -50%);
+            transition: .7s;   
+        }
+    }
+
+    .img-title {
+        font-weight: 300;
+        font-style: normal;
+        font-family: 'Roboto Mono', monospace;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.3;
+        letter-spacing: 0px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        padding: 5px 20px;
+        bottom: auto;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .7s;
+    }
+
+    &:before {
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 1%;
+        height: 100%;
+        position: absolute;
+        transition: .3s;
+    }
+
+    &:hover {
+        img {
+            left: calc(50% - 0px);
+        }
+
+        .img-title {
+            left: calc(50% - 0px);
+            opacity: 1;
+        }
+
+        &:before {
+            background-color: rgba(74, 82, 95, 0.85);
+            width: 100%;
+        }
+    }
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 125px;
+    grid-auto-flow: dense;
+    
+    height:auto!important;
+    /* Fill all spaces with fitted images */
+}
+
+.horizontal {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.vertical {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.big {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.normal {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* Grid */
+/* gallery */
+
+.load-more {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.welcome-promo {
+    background: #7f7f7f;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    margin-top: 80px;
+
+    .main-btn {
+        margin-top: 30px;
+    }
+
+}
+
+.promo-title {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: calc(18px + 3vmin);
+    line-height: 1.3;
+    letter-spacing: 5px;
+}
+
+//gallery
