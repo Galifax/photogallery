@@ -35,131 +35,164 @@
             <div class="col-md-4">
                 <div class="pricing-item">
                     <div class="price-block">
-                        <h3 class="block-title">PLAN #1</h3>
+
+                        <h3 class="block-title">Пакет минимальный</h3>
                         <div class="price">
-                            <p class="price-price"><span class="currency">$</span>245</p>
-                            <p class="time">Monthly</p>
+                            <p class="price-price"><span class="currency">$</span>250</p>
+                            <p class="time"></p>
                         </div>
                         <p class="bottom-text">
-                                With this option you will make:
+                        срок готовности 1-2 месяца
                         </p>
                     </div>
                     <div class="content">
                         <ul class="pricing-item-list">
-                            <li>fashion catalogs</li>
-                            <li>birthday photo session</li>
-                            <li>fashion photography</li>
-                            <li>amazing photos</li>
-                            <li>glamour photography</li>
+                            <li>образ в обмотке</li>
+                            <li>один образ в костюмчике и с одним реквизитом (костюмчик и реквизит на выбор)</li>
+                            <li>фото с родителями</li>
+                            <li> до 20-ти фото в обработке (на выбор фотографа)</li>
+                            <li>результат на флешке в подарочной упаковке</li>
                         </ul>
-                        <button class="main-btn">MAKE AN APPOINTMENT</button>
+                        <p>
+
+
+                        </p>
+                        <!-- <button class="main-btn">MAKE AN APPOINTMENT</button> -->
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                    <div class="pricing-item">
-                        <div class="price-block">
-                            <h3 class="block-title">PLAN #1</h3>
-                            <div class="price">
-                                <p class="price-price"><span class="currency">$</span>245</p>
-                                <p class="time">Monthly</p>
-                            </div>
-                            <p class="bottom-text">
-                                    With this option you will make:
-                            </p>
+                <div class="pricing-item">
+                    <div class="price-block">
+                        <h3 class="block-title">Пакет комфорт</h3>
+                        <div class="price">
+                            <p class="price-price"><span class="currency">$</span>450</p>
+                            <p class="time"></p>
                         </div>
-                        <div class="content">
-                            <ul class="pricing-item-list">
-                                <li>fashion catalogs</li>
-                                <li>birthday photo session</li>
-                                <li>fashion photography</li>
-                                <li>amazing photos</li>
-                                <li>glamour photography</li>
-                            </ul>
-                            <button class="main-btn">MAKE AN APPOINTMENT</button>
-                        </div>
+                        <p class="bottom-text">
+                            срок готовности 2-3 месяца
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="pricing-item-list">
+                            <li>образ в обмотке</li>
+                            <li>два образа в костюмчике с двумя реквизитами (костюмчик и реквизит на выбор)</li>
+                            <li>фото с родителями</li>
+                            <li>до 20-ти фото в обработке (на выбор фотографа)</li>
+                            <li>мини-бук 15*15</li>
+                            <li>результат на флешке в подарочной упаковке</li>
+                        </ul>
+                        <!-- <button class="main-btn">MAKE AN APPOINTMENT</button> -->
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                        <div class="pricing-item">
-                            <div class="price-block">
-                                <h3 class="block-title">PLAN #1</h3>
-                                <div class="price">
-                                    <p class="price-price"><span class="currency">$</span>245</p>
-                                    <p class="time">Monthly</p>
-                                </div>
-                                <p class="bottom-text">
-                                        With this option you will make:
-                                </p>
-                            </div>
-                            <div class="content">
-                                <ul class="pricing-item-list">
-                                    <li>fashion catalogs</li>
-                                    <li>birthday photo session</li>
-                                    <li>fashion photography</li>
-                                    <li>amazing photos</li>
-                                    <li>glamour photography</li>
-                                </ul>
-                                <button class="main-btn">MAKE AN APPOINTMENT</button>
-                            </div>
+            <div class="col-md-4">
+                <div class="pricing-item">
+                    <div class="price-block">
+                        <h3 class="block-title">Пакет оптимальный </h3>
+                        <div class="price">
+                            <p class="price-price"><span class="currency">$</span>550</p>
+                            <p class="time"></p>
                         </div>
+                        <p class="bottom-text">
+                            срок готовности 2-3 месяца
+                        </p>
                     </div>
+                    <div class="content">
+                        <ul class="pricing-item-list">
+                            <li>образ в обмотке</li>
+                            <li>три образа в костюмчике с тремя реквизитами (костюмчик и реквизит на выбор)</li>
+                            <li>фото с родителями</li>
+                            <li>до 30-ти фото в обработке (на выбор фотографа)</li>
+                            <li>мини-бук 25*25</li>
+                            <li>результат на флешке в подарочной упаковке</li>
+                        </ul>
+                        <!-- <button class="main-btn">MAKE AN APPOINTMENT</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="pricing-item">
+                    <div class="price-block">
+                        <h3 class="block-title">Пакет премиум</h3>
+                        <div class="price">
+                            <p class="price-price"><span class="currency">$</span>750</p>
+                            <p class="time"></p>
+                        </div>
+                        <p class="bottom-text">
+                             срок готовности 2-3 месяца
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="pricing-item-list">
+                            <li>образ в обмотке</li>
+                            <li>три образа в костюмчике с тремя реквизитами (костюмчик и реквизит на выбор)</li>
+                            <li>фото с родителями</li>
+                            <li>до 30-ти фото в обработке (на выбор фотографа)</li>
+                            <li>фото-книга на 10 разворотов</li>
+                            <li> результат на флешке в подарочной упаковке +подарок от фотографа</li>
+                        </ul>
+                        <!-- <button class="main-btn">MAKE AN APPOINTMENT</button> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <style>
-    .price-block{
+    .price-block {
         background-color: #d1c8bc;
         text-align: center;
     }
 
-.price-block .price{
-    background-image: url('./img/mt-1300-pricing-table-bg.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 30px;
+    .price-block .price {
+        background-image: url('./img/mt-1300-pricing-table-bg.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 30px;
         padding-bottom: 30px;
-}
+    }
 
-.price-price{
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
-    font-size: 48px;
-    line-height: 1.3;
-    letter-spacing: 5px;
-    margin: 0;
-}
+    .price-price {
+        font-weight: 700;
+        font-style: normal;
+        font-family: 'Roboto Mono', monospace;
+        color: #ffffff;
+        font-size: 48px;
+        line-height: 1.3;
+        letter-spacing: 5px;
+        margin: 0;
+    }
 
-.price-block .price-price .currency{
-    font-size: 26px;
-}
+    .price-block .price-price .currency {
+        font-size: 26px;
+    }
 
-.bottom-text{
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0px;
-    padding: 30px;
-    margin: 0px;
-}
+    .bottom-text {
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto Mono', monospace;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0px;
+        padding: 30px;
+        margin: 0px;
+    }
 
-.price-block .time{
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0px;
-}
+    .price-block .time {
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto Mono', monospace;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+    }
 
     .block-title {
         font-weight: 400;
@@ -301,5 +334,6 @@
         border-color: #d1c8bc;
         outline: none;
     }
+
 </style>
 @endsection
