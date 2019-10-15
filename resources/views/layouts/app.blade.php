@@ -34,11 +34,10 @@
                     <nav class="main-header-nav col-sm-8">
                         <ul class="main-header-list">
                             <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">About</a></li>
                             <li><a href="{{ route('gallery') }}">Gallery</a></li>
                             <li><a href="{{ route('pricing') }}">Pricing</a></li>
-                            <li><a href="{{ route('clients') }}">Clients</a></li>
-                            <li><a href="{{ route('blog') }}">Blog</a></li>
-                            <!-- <li><a href="{{ route('blogShow', ["slug" =>  1]) }}">Blog/1</a></li> -->
+                            <li><a href="{{ route('stocks') }}">Stocks</a></li>
                             <li><a href="{{ route('contacts') }}">Contacts</a></li>
                         </ul>
                     </nav>
@@ -129,7 +128,7 @@
                 console.log(selector)
 
 
-          
+
                 //   $('.portfolio-item').isotope({
                 //     filter: selector
                 //   })
@@ -137,7 +136,7 @@
             });
         });
 
-        $gallery = $('#lightgallery'); 
+        $gallery = $('#lightgallery');
 
 // $gallery.lightGallery({
 //      mode: 'lg-fade',

@@ -11,24 +11,14 @@ class SiteController extends Controller
         return view('index.index');
     }
 
-    public function blog()
+    public function about()
     {
-        return view('blog.index');
+        return view('about.index');
     }
 
-    public function blogShow()
+    public function gallery()
     {
-        return view('blog.show');
-    }
-
-    public function clients()
-    {
-        return view('clients.index');
-    }
-
-    public function contacts()
-    {
-        return view('contacts.index');
+        return view('gallery.index');
     }
 
     public function pricing()
@@ -36,8 +26,15 @@ class SiteController extends Controller
         return view('pricing.index');
     }
 
-    public function gallery()
+    public function stocks()
     {
-        return view('gallery.index');
+        return view('stocks.index');
     }
+
+    public function contacts()
+    {
+        return view('contacts.index');
+    }
+
+
 }
