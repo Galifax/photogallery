@@ -34,13 +34,12 @@
 
     <div class="home-header-promo">
         <h2 class="home-header-promo-title">
-            <span>WORLD CLASS <br></span>
-            PHOTOGRAPH
+            ДОБРО ПОЖАЛОВАТЬ <br>
+            <span>В МИР  БЕСКОНЕЧНОЙ ЛЮБВИ И СЧАСТЬЯ !!!</span>
         </h2>
-        <p class="home-header-promo-text">Dive into amazing world of black-and-white photography full of emotions,
-            feelings, beautiful faces and personalities. Enjoy this mixture of beauty and creativity!</p>
+        <p class="home-header-promo-text">Рада приветствовать Вас на моем сайте. Я Зырина Юлиана семейный фотограф и фотограф новорожденных. Создаю неповторимую память в фото-историю Вашей семьи, ведь благодаря фото можно остановить время, которое так быстротечно и сохранить в памяти неповторимые моменты. Очень приятно со временем пересматривать фото, вспоминать и снова переживать те эмоции. В каждую фотосессию я вкладываю частичку своей души и очень благодарна каждой семье за выбор и доверие.
+</p>
     </div>
-
 </header>
 
 <section class="gallery">
@@ -129,12 +128,12 @@
             </li>
         </ul>
 
-        <div class="load-more">
+        <!-- <div class="load-more">
             <button class="main-btn">Load More</button>
-        </div>
+        </div> -->
     </div>
 
-    <div class="subscribe-promo">
+    <!-- <div class="subscribe-promo">
         <div class="container">
             <h3 class="promo-title">FOLLOW OUR UPDATES<br>
                 <span>
@@ -144,10 +143,10 @@
             <input name="E-mail" placeholder="Your e-mail" type="text">
             <button class="main-btn">Subscribe</button>
         </div>
-    </div>
+    </div> -->
 </section>
 
-<div id="lightgalleryIndex" class="row index-small-gall">
+<!-- <div id="lightgalleryIndex" class="row index-small-gall">
             <div class="col-md-2 col-sm-4 gallery-item" data-src="./img/gall/mt-1300-home_gallery_3-1.jpg"
                 data-sub-html="<h4>Fading Light</h4>">
                 <a href="">
@@ -190,5 +189,5 @@
                     <span class="img-title">Creativity</span>
                 </a>
             </div>
-        </div>
+        </div> -->
 @endsection
