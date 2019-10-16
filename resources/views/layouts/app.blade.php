@@ -58,7 +58,7 @@
                 </h3>
             </div>
             <p class="copy-r">
-                © 2018 Anna Solas, Inc and Web Templates Ltd. All Rights Reserved. Designed by XXX.
+                © {{ date('Y') }} Anna Solas, Inc and Web Templates Ltd. All Rights Reserved. Designed by XXX.
             </p>
         </footer>
 

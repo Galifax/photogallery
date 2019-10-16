@@ -73,12 +73,14 @@
     </div>
     <!-- contacts row  -->
 
-    <form>
-        <input name="Name" Placeholder="Your Name" type="text">   
-        <input name="E-mail" Placeholder="Your  E-mail" type="text">  
-        <input name="Website" Placeholder="Your Website" type="text">  
-        <input name="Company" Placeholder="Your Company" type="text">  
-        <textarea name="Message" Placeholder="Your Message" id="" rows="4"></textarea>
+    <form action="{{ route('callback.send') }}" method="post">
+        {{ csrf_field() }}
+        <input name="name" Placeholder="Your Name *" required type="text">
+        <input name="email" Placeholder="Your E-mail *" required type="e-mail">
+        <input name="phone" Placeholder="Your phone" type="text">
+        <input name="website" Placeholder="Your Website" type="text">
+        <input name="company" Placeholder="Your Company" type="text">
+        <textarea name="message" Placeholder="Your Message *" required id="" rows="4"></textarea>
         <div class="form-actions">
         <button class="main-btn">SEND MESSAGE</button>
         </div>
