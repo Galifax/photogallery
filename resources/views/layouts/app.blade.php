@@ -28,11 +28,11 @@
         <header class="main-header">
             <div class="container">
                 <div class="row">
-                    <div class="header-logo col-sm-4">
+                    <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
                     </div>
-                    <nav class="main-header-nav col-sm-8">
-                        <ul class="main-header-list">
+                    <nav class="main-header-nav col-sm-12 col-lg-8">
+                        <ul class="main-header-list closed">
                             <li><a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
@@ -40,6 +40,7 @@
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
+                        <button class="mob-menu-btn">Меню</button>
                     </nav>
                 </div>
             </div>
@@ -47,7 +48,7 @@
         <style>
 
         </style>
-        <div style="margin-top:107px;">
+        <div>
             @yield('content')
         </div>
         <footer>
@@ -115,10 +116,7 @@
             $('#lightgalleryIndex').lightGallery({
                 pager: true
             });
-        });
 
-
-        $(document).ready(function () {
             $('.portfolio-menu ul li').click(function () {
                 $('.portfolio-menu ul li').removeClass('active');
                 $(this).addClass('active');
@@ -127,44 +125,34 @@
                 var selector = $(this).attr('data-filter');
                 console.log(selector)
 
+            });
 
+            $gallery = $('#lightgallery');
 
-                //   $('.portfolio-item').isotope({
-                //     filter: selector
-                //   })
-                //   return false;
+            //isotope Code
+            $('#lightgallery').isotope({
+                // options
+                itemSelector: '.gallery-item',
+                layoutmode: 'fitrows'
+            });
+            $('.filter-btn').on('click', function () {
+                var filterValue = $(this).attr('data-filter');
+                $('#lightgallery').isotope({
+                    filter: filterValue
+                });
+                $gallery.data('lightGallery').destroy(true);
+                $gallery.lightGallery({
+                    selector: filterValue.replace('*', '')
+                });
+            });
+
+            $(".mob-menu-btn").click(function(){
+                $(".main-header-list").toggleClass("closed");
+            });
+            $(".home-menu-btn").click(function(){
+                $(".home-nav-list").toggleClass("closed");
             });
         });
-
-        $gallery = $('#lightgallery');
-
-// $gallery.lightGallery({
-//      mode: 'lg-fade',
-//      hash: true	,
-//      download: true,
-//      enableDrag: true,
-//      enableSwipe: true,
-//      thumbnail:true,
-//      animateThumb: true,
-//      showThumbByDefault: true
-//    });
-
-
-
-//isotope Code
-$('#lightgallery').isotope({
-  // options
-  itemSelector: '.gallery-item',
-  layoutmode: 'fitrows'
-});
-$('.filter-btn').on( 'click', function() {
-    var filterValue = $(this).attr('data-filter');
-    $('#lightgallery').isotope({ filter: filterValue });
-    $gallery.data('lightGallery').destroy(true);
-    $gallery.lightGallery({
-      selector: filterValue.replace('*','')
-    });
-});
     </script>
 </body>
 

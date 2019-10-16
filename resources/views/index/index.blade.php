@@ -5,12 +5,12 @@
 @section('description', 'Home')
 
 @section('content')
-<header class="home-header">
+<section class="home-header" style="margin-top:-10px;">
     <div class="home-header-logo">
         <img src="/img/mt-1300-home-logo.png" alt="">
     </div>
     <nav class="home-nav">
-        <ul class="home-nav-list">
+        <ul class="home-nav-list closed">
             <li class="home-nav-list-item"><a href="{{ route('home') }}">Главная</a></li>
             <li class="home-nav-list-item"><a href="{{ route('about') }}">о себе</a></li>
             <li class="home-nav-list-item"><a href="{{ route('gallery') }}">портфолио</a></li>
@@ -18,6 +18,7 @@
             <li class="home-nav-list-item"><a href="{{ route('stocks') }}">акции</a></li>
             <li class="home-nav-list-item"><a href="{{ route('contacts') }}">контакты</a></li>
         </ul>
+        <button class="home-menu-btn">Меню</button>
     </nav>
 
 
@@ -34,7 +35,7 @@
             частичку своей души и очень благодарна каждой семье за выбор и доверие.
         </p>
     </div>
-</header>
+</section>
 
 <section class="gallery">
     <div class="container">
