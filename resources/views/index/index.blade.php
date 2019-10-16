@@ -11,34 +11,28 @@
     </div>
     <nav class="home-nav">
         <ul class="home-nav-list">
-            <li class="home-nav-list-item">
-                <a href=""> HOME</a>
-            </li>
-            <li class="home-nav-list-item">
-                <a href="">Gallery</a>
-            </li>
-            <li class="home-nav-list-item">
-                <a href=""> PRICING</a>
-            </li>
-            <li class="home-nav-list-item">
-                <a href=""> CLIENTS</a>
-            </li>
-            <li class="home-nav-list-item">
-                <a href=""> BLOG</a>
-            </li>
-            <li class="home-nav-list-item">
-                <a href=""> CONTACTS</a>
-            </li>
+            <li class="home-nav-list-item"><a href="{{ route('home') }}">Главная</a></li>
+            <li class="home-nav-list-item"><a href="{{ route('about') }}">о себе</a></li>
+            <li class="home-nav-list-item"><a href="{{ route('gallery') }}">портфолио</a></li>
+            <li class="home-nav-list-item"><a href="{{ route('pricing') }}">цены</a></li>
+            <li class="home-nav-list-item"><a href="{{ route('stocks') }}">акции</a></li>
+            <li class="home-nav-list-item"><a href="{{ route('contacts') }}">контакты</a></li>
         </ul>
     </nav>
+
+
 
     <div class="home-header-promo">
         <h2 class="home-header-promo-title">
             ДОБРО ПОЖАЛОВАТЬ <br>
-            <span>В МИР  БЕСКОНЕЧНОЙ ЛЮБВИ И СЧАСТЬЯ !!!</span>
+            <span>В МИР БЕСКОНЕЧНОЙ ЛЮБВИ И СЧАСТЬЯ !!!</span>
         </h2>
-        <p class="home-header-promo-text">Рада приветствовать Вас на моем сайте. Я Зырина Юлиана семейный фотограф и фотограф новорожденных. Создаю неповторимую память в фото-историю Вашей семьи, ведь благодаря фото можно остановить время, которое так быстротечно и сохранить в памяти неповторимые моменты. Очень приятно со временем пересматривать фото, вспоминать и снова переживать те эмоции. В каждую фотосессию я вкладываю частичку своей души и очень благодарна каждой семье за выбор и доверие.
-</p>
+        <p class="home-header-promo-text">Рада приветствовать Вас на моем сайте. Я Зырина Юлиана семейный фотограф и
+            фотограф новорожденных. Создаю неповторимую память в фото-историю Вашей семьи, ведь благодаря фото можно
+            остановить время, которое так быстротечно и сохранить в памяти неповторимые моменты. Очень приятно со
+            временем пересматривать фото, вспоминать и снова переживать те эмоции. В каждую фотосессию я вкладываю
+            частичку своей души и очень благодарна каждой семье за выбор и доверие.
+        </p>
     </div>
 </header>
 

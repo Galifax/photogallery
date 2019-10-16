@@ -33,12 +33,12 @@
                     </div>
                     <nav class="main-header-nav col-sm-8">
                         <ul class="main-header-list">
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="{{ route('about') }}">About</a></li>
-                            <li><a href="{{ route('gallery') }}">Gallery</a></li>
-                            <li><a href="{{ route('pricing') }}">Pricing</a></li>
-                            <li><a href="{{ route('stocks') }}">Stocks</a></li>
-                            <li><a href="{{ route('contacts') }}">Contacts</a></li>
+                            <li><a href="{{ route('home') }}">Главная</a></li>
+                            <li><a href="{{ route('about') }}">о себе</a></li>
+                            <li><a href="{{ route('gallery') }}">портфолио</a></li>
+                            <li><a href="{{ route('pricing') }}">цены</a></li>
+                            <li><a href="{{ route('stocks') }}">акции</a></li>
+                            <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
                     </nav>
                 </div>
