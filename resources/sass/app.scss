@@ -25,6 +25,23 @@
     max-width: 420px;
 }
 
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:2s;
+  }
+
+
 .main-btn:hover,
 .main-btn:active,
 .main-btn:focus {
@@ -43,17 +60,22 @@
     letter-spacing: 3px;
     font-family: "Roboto Mono", monospace;
     font-weight: 700;
-    // color: #ffffff;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     background: transparent;
     border: none;
     cursor: pointer;
     outline: none;
+    display: none;
+    margin: auto;
 
     &:active,
     &:focus {
         outline: none;
+    }
+    @media screen {
+        
     }
 }
 
@@ -77,14 +99,14 @@
         .main-header-list {
             list-style: none;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             height: 100%;
             padding: 0;
             margin: 0;
 
             li {
-                margin-left: 29px;
+                margin:0px 10px;
 
                 a {
                     padding: 10px;
@@ -106,7 +128,7 @@
             }
         }
 
-        @media screen and (max-width:991px) {
+        @media screen and (max-width:768px) {
             text-align: center;
 
             .main-header-list {
@@ -114,16 +136,21 @@
                 flex-direction: column;
                 position: fixed;
                 height: fit-content;
-                top: 137px;
+                top: 38px;
                 left: 50%;
                 background-color: #343437;
                 align-items: center;
                 left: 0;
+                left: 50%;
+                transform: translateX(-50%);
 
                 &.closed {
                     opacity: 0;
                 }
 
+            }
+            .mob-menu-btn{
+                display: block;
             }
         }
     }
@@ -546,12 +573,21 @@ form {
     .grid {
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: 125px;
         grid-auto-flow: dense;
 
         height: auto !important;
         /* Fill all spaces with fitted images */
+
+        @media screen and (max-width:786px){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-rows: 75px;
+        }
+        @media screen and (max-width:500px){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 100px;
+        }
     }
 
     .horizontal {

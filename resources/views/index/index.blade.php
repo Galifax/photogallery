@@ -25,7 +25,7 @@
 
     <div class="home-header-promo">
 
-        <img src="/img/zaika.jpg" alt="zaika">
+        <img class="fade-in" src="/img/zaika.jpg" alt="zaika">
 
         <h2 class="home-header-promo-title">
             ДОБРО ПОЖАЛОВАТЬ <br>

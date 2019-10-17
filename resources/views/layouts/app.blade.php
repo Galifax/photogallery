@@ -31,7 +31,7 @@
                     <!-- <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
                     </div> -->
-                    <nav class="main-header-nav col-sm-12 col-lg-8">
+                    <nav class="main-header-nav col-sm-12">
                         <ul class="main-header-list closed">
                             <li><a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
