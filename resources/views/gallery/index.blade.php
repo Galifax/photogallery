@@ -5,11 +5,9 @@
 @section('description', 'Gallery')
 
 @section('content')
-<div class="gallery-page-title" style="margin-top: 107px;">
-    <div class="container">
-        <h1 class="title">Портфолио</h1>
+<div class="d-flex justify-content-center" style="margin-top:107px;">
+        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
     </div>
-</div>
 
 <section class="gallery" style="overflow: hidden;">
     <div class="container">
@@ -42,11 +40,11 @@
         </div>
     </div>
 
-    <div class="welcome-promo">
+    <!-- <div class="welcome-promo">
         <div class="container">
             <h3 class="promo-title">Welcom to my world of images.</h3>
             <button class="main-btn">Load More</button>
         </div>
-    </div>
+    </div> -->
 </section>
 @endsection

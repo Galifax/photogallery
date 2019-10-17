@@ -5,34 +5,18 @@
 @section('description', 'Pricing')
 
 @section('content')
-<div class="page-title" style="margin-top: 107px;">
-    <div class="container-fluid" style="height:100%">
-        <div class="row" style="height:100%">
-            <div class="col-md-6 d-none d-md-block"></div>
-            <div class="col-md-6 row align-items-center">
-                <div>
-                    <h2 class="pricing-title">
-                        We Offer Fair and Affordable Prices
-                    </h2>
-                    <span class="pricing-subtitle">so everybody could have an opportunity to receive professional
-                        maintenance help any time!</span>
-                </div>
-            </div>
-        </div>
+<div class="d-flex justify-content-center" style="margin-top:107px;">
+        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
     </div>
-</div>
 
 <section class="pricing">
     <div class="container">
         <div class="pricing-tables">
-            <h3 class="pricing-tables-title">PRICING TABLES</h3>
-            <p class="pricing-tables-text">Check our pricing tables to know what options is right for you.</p>
-            <p class="pricing-tables-text">You can contact our Customer Service representative to calculate approximate
-                price for your project depending on your area and amount of work that needs to be done.</p>
+            <h3 class="pricing-tables-title">Category Title</h3>
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="pricing-item">
                     <div class="price-block">
 
@@ -62,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="pricing-item">
                     <div class="price-block">
                         <h3 class="block-title">Пакет комфорт</h3>
@@ -88,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="pricing-item">
                     <div class="price-block">
                         <h3 class="block-title">Пакет оптимальный </h3>
@@ -114,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="pricing-item">
                     <div class="price-block">
                         <h3 class="block-title">Пакет премиум</h3>
@@ -143,6 +127,9 @@
     </div>
 </section>
 <style>
+    .pricing-item{
+        margin-bottom:30px;
+    }
     .price-block {
         background-color: #d1c8bc;
         text-align: center;
@@ -246,7 +233,7 @@
         z-index: 0;
         font: 14px/14px FontAwesome;
         color: #d1c8bc;
-        content: "\f00c";
+        content: "-";
         text-align: center;
     }
 
@@ -278,12 +265,12 @@
     }
 
     .page-title {
-        background-image: url('./img/mt-1300-pricing-bg-1.jpg');
-        background-position: center;
+        background-image: url(./img/zaika.jpg);
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 514px;
+        background-size: 400px;
+        /* background-attachment: fixed; */
+        height: 300px;
     }
 
     .pricing-title {

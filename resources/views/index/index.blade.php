@@ -5,11 +5,11 @@
 @section('description', 'Home')
 
 @section('content')
-<section class="home-header" style="margin-top:-10px;">
-    <div class="home-header-logo">
+<section class="home-header" style="margin-top:107px;">
+    <!-- <div class="home-header-logo">
         <img src="/img/mt-1300-home-logo.png" alt="">
-    </div>
-    <nav class="home-nav">
+    </div> -->
+    <!-- <nav class="home-nav">
         <ul class="home-nav-list closed">
             <li class="home-nav-list-item"><a href="{{ route('home') }}">Главная</a></li>
             <li class="home-nav-list-item"><a href="{{ route('about') }}">о себе</a></li>
@@ -19,11 +19,14 @@
             <li class="home-nav-list-item"><a href="{{ route('contacts') }}">контакты</a></li>
         </ul>
         <button class="home-menu-btn">Меню</button>
-    </nav>
+    </nav> -->
 
-
+  
 
     <div class="home-header-promo">
+
+        <img src="/img/zaika.jpg" alt="zaika">
+
         <h2 class="home-header-promo-title">
             ДОБРО ПОЖАЛОВАТЬ <br>
             <span>В МИР БЕСКОНЕЧНОЙ ЛЮБВИ И СЧАСТЬЯ !!!</span>

@@ -18,6 +18,11 @@
   cursor: pointer;
 }
 
+.zaika {
+  width: 100%;
+  max-width: 420px;
+}
+
 .main-btn:hover,
 .main-btn:active,
 .main-btn:focus {
@@ -36,7 +41,6 @@
   letter-spacing: 3px;
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   background: transparent;
@@ -127,6 +131,7 @@
 
 .contacts {
   padding: 50px 0 35px;
+  justify-content: center;
 }
 
 .contacts .contact-item {
@@ -186,16 +191,14 @@ form .form-actions {
 .home-header {
   margin: 0;
   padding: 0;
-  background-color: #4d4d51;
   border: none;
-  background-image: url("/img/mt-1300-home-bg1.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
   min-height: 80vh;
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .home-header .home-header-logo {
@@ -279,14 +282,18 @@ form .form-actions {
 .home-header .home-header-promo {
   margin: auto;
   max-width: 970px;
-  padding: 8vw 15px 8vw 15px;
+  padding: 2vw 15px 2vw 15px;
+}
+
+.home-header .home-header-promo img {
+  width: 100%;
+  max-width: 420px;
 }
 
 .home-header .home-header-promo .home-header-promo-title {
   font-weight: 700;
   font-style: normal;
   font-family: "Roboto Mono", monospace;
-  color: #ffffff;
   font-size: calc(20px + 5vmin);
   letter-spacing: 14px;
   margin-bottom: 30px;
@@ -302,7 +309,6 @@ form .form-actions {
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto Mono", monospace;
-  color: #ffffff;
   font-size: calc(10px + 1vmin);
   line-height: 1.7;
   letter-spacing: 0px;
@@ -438,7 +444,8 @@ form .form-actions {
 }
 
 .gallery {
-  padding-top: 80px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .section-title {
@@ -451,6 +458,7 @@ form .form-actions {
   letter-spacing: 7px;
   text-align: center;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 /* gallery  */
@@ -596,6 +604,11 @@ form .form-actions {
 .stocks {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.stocks img {
+  width: 100%;
+  max-width: 420px;
 }
 
 .stock_item {

@@ -28,9 +28,9 @@
         <header class="main-header">
             <div class="container">
                 <div class="row">
-                    <div class="header-logo col-sm-12 col-lg-4">
+                    <!-- <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
-                    </div>
+                    </div> -->
                     <nav class="main-header-nav col-sm-12 col-lg-8">
                         <ul class="main-header-list closed">
                             <li><a href="{{ route('home') }}">Главная</a></li>

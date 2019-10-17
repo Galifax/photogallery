@@ -6,10 +6,8 @@
 
 @section('content')
 <div>
-    <div class="gallery-page-title" style="margin-top: 107px;">
-        <div class="container">
-            <h1 class="title">Акции</h1>
-        </div>
+    <div class="d-flex justify-content-center" style="margin-top:107px;">
+        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
     </div>
 
     <section class="stocks" style="overflow: hidden;">
