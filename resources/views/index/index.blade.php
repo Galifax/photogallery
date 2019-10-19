@@ -6,22 +6,6 @@
 
 @section('content')
 <section class="home-header" style="margin-top:107px;">
-    <!-- <div class="home-header-logo">
-        <img src="/img/mt-1300-home-logo.png" alt="">
-    </div> -->
-    <!-- <nav class="home-nav">
-        <ul class="home-nav-list closed">
-            <li class="home-nav-list-item"><a href="{{ route('home') }}">Главная</a></li>
-            <li class="home-nav-list-item"><a href="{{ route('about') }}">о себе</a></li>
-            <li class="home-nav-list-item"><a href="{{ route('gallery') }}">портфолио</a></li>
-            <li class="home-nav-list-item"><a href="{{ route('pricing') }}">цены</a></li>
-            <li class="home-nav-list-item"><a href="{{ route('stocks') }}">акции</a></li>
-            <li class="home-nav-list-item"><a href="{{ route('contacts') }}">контакты</a></li>
-        </ul>
-        <button class="home-menu-btn">Меню</button>
-    </nav> -->
-
-  
 
     <div class="home-header-promo">
 
@@ -40,41 +24,26 @@
     </div>
 </section>
 
-<section class="gallery">
+<section class="pricing">
     <div class="container">
-        <h3 class="section-title">
-            MY LATEST WORKS
-        </h3>
-
-        <ul id="lightgallery" class="grid">
-            @foreach($galleries as $photo)
-                <li class="horizontal gallery-item" data-src="{{ $photo->getPhoto() }}"
-                    data-sub-html="<h4>Fading Light</h4>">
-                    <a href="">
-                        <img class="img-responsive" src="{{ $photo->getPhoto() }}">
-                        <span class="img-title">{{ $photo->name }}</span>
-                    </a>
-                </li>
-            @endforeach
-
-        </ul>
-
-        <!-- <div class="load-more">
-            <button class="main-btn">Load More</button>
-        </div> -->
-    </div>
-
-    <!-- <div class="subscribe-promo">
-        <div class="container">
-            <h3 class="promo-title">FOLLOW OUR UPDATES<br>
-                <span>
-                    Subscribe to receive the hottest news and information about updates and future events!
-                </span>
-            </h3>
-            <input name="E-mail" placeholder="Your e-mail" type="text">
-            <button class="main-btn">Subscribe</button>
+        <div class="pricing-tables">
+            <h3 class="pricing-tables-title">Виде фотосессий</h3>
         </div>
-    </div> -->
+        <div class="row">
+            @foreach ($category as $item)
+            <div class="col-md-6">
+                <div class="pricing-item">
+                    <div class="price-block centreted">
+                        <p class="price-price">{{ $item->name }}</p>
+                    </div>
+                    <div class="content">
+                        <a href="{{ route('pricingShow', ['slug' => $item->slug]) }}" class="main-btn">Перейти</a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
 </section>
 
 <!-- <div id="lightgalleryIndex" class="row index-small-gall">

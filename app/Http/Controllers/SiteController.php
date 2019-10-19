@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\AboutUs;
 use App\Callback;
+use App\Category;
 use App\Gallery;
 use App\Stock;
 use Illuminate\Http\Request;
@@ -12,8 +13,8 @@ class SiteController extends Controller
 {
     public function index()
     {
-        $galleries = Gallery::getLastWorks();
-        return view('index.index', compact('galleries'));
+        $category = Category::getCategories();
+        return view('index.index', compact('category'));
     }
 
     public function about()
@@ -28,9 +29,13 @@ class SiteController extends Controller
         return view('gallery.index', compact('galleries'));
     }
 
-    public function pricing()
+    public function pricingShow($slug)
     {
-        return view('pricing.index');
+        $categories = Category::getCategories();
+        $category = Category::getBySlug($slug);
+        $gallery = Gallery::where('category_id', $category->id)
+            ->paginate(20);
+        return view('pricing.show', compact('categories', 'category', 'gallery'));
     }
 
     public function stocks()

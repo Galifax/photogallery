@@ -12,9 +12,7 @@
     <meta name="keywords" content="@yield('keywords')">
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap&subset=cyrillic" rel="stylesheet">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- lightgall css  -->
@@ -36,7 +34,7 @@
                             <li><a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
-                            <li><a href="{{ route('pricing') }}">цены</a></li>
+{{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
@@ -54,11 +52,12 @@
         <footer>
             <div class="conteiner">
                 <h3 class="footer-title">
-                    ANNA SOLAS
+                    Zarina Yuliana
                 </h3>
             </div>
             <p class="copy-r">
-                © {{ date('Y') }} Anna Solas, Inc and Web Templates Ltd. All Rights Reserved. Designed by XXX.
+                Тел:<a href="tel:0631274391">+38(063)127-43-91</a>, E-mail:<a href="mailto:zyrinayliana5@gmail.com">zyrinayliana5@gmail.com</a>, Instagram:<a href="https://www.instagram.com/photozyrina/?r=nametag">@photozyrina </a>
+
             </p>
         </footer>
 
@@ -88,6 +87,9 @@
                 font-size: 12px;
                 line-height: 1.2;
                 letter-spacing: 0px;
+            }
+            .copy-r a{
+                color:#d1c8bc;
             }
 
         </style>

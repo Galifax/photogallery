@@ -12,8 +12,8 @@
         </div>
     </div> -->
 
-    <section class="stocks" style="overflow: hidden;min-height: calc(100vh - 336px);">
-        <div class="d-flex justify-content-center" style="margin-top:107px;">
+    <section class="stocks" style="overflow: hidden;min-height: calc(100vh - 336px);margin-top:107px;">
+        <div class="d-flex justify-content-center" >
             <img class="zaika" src="/img/zaika.jpg" alt="zaika">
         </div>
         <div class="container">
