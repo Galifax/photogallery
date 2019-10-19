@@ -13,18 +13,25 @@
     <section class="stocks" style="overflow: hidden;">
         <div class="container">
             @foreach($stocks as $stock)
-                <div class="stock_item">
-                    <div class="stock_media">
-                        <img src="{{ $stock->getPhoto() }}"
-                            alt="">
-                    </div>
-                    <div class="stock_content">
-                        <h3 class="stock_title">{{ $stock->name }}</h3>
-                        <span class="stock_time">{{ $stock->time_from }} - {{ $stock->time_to }}</span>
+            <div class="stock_item">
+                <div class="stock_media">
+                    <img src="{{ $stock->getPhoto() }}" alt="">
+                </div>
+                <div class="stock_content">
+                    <h3 class="stock_title">{{ $stock->name }}</h3>
+                    <span class="stock_time">{{ $stock->time_from }} - {{ $stock->time_to }}</span>
+                    <p class="stock_descr">{{ $stock->text }}</p>
+
+                    <div class="collapse" id="collapseExample">
                         <p class="stock_descr">{{ $stock->text }}</p>
                     </div>
+                    <a class="show-more" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Узнать больше
+                    </a>
                 </div>
-                <hr>
+            </div>
+            <hr>
             @endforeach
         </div>
     </section>

@@ -40,41 +40,41 @@
     </div>
 </section>
 
-<section class="gallery">
+<section class="pricing">
     <div class="container">
-        <h3 class="section-title">
-            MY LATEST WORKS
-        </h3>
-
-        <ul id="lightgallery" class="grid">
-            @foreach($galleries as $photo)
-                <li class="horizontal gallery-item" data-src="{{ $photo->getPhoto() }}"
-                    data-sub-html="<h4>Fading Light</h4>">
-                    <a href="">
-                        <img class="img-responsive" src="{{ $photo->getPhoto() }}">
-                        <span class="img-title">{{ $photo->name }}</span>
-                    </a>
-                </li>
-            @endforeach
-
-        </ul>
-
-        <!-- <div class="load-more">
-            <button class="main-btn">Load More</button>
-        </div> -->
-    </div>
-
-    <!-- <div class="subscribe-promo">
-        <div class="container">
-            <h3 class="promo-title">FOLLOW OUR UPDATES<br>
-                <span>
-                    Subscribe to receive the hottest news and information about updates and future events!
-                </span>
-            </h3>
-            <input name="E-mail" placeholder="Your e-mail" type="text">
-            <button class="main-btn">Subscribe</button>
+        <div class="pricing-tables">
+            <h3 class="pricing-tables-title">Category Title</h3>
         </div>
-    </div> -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pricing-item">
+                    <div class="price-block centreted">
+
+                        <!-- <h3 class="block-title">Пакет минимальный</h3> -->
+                        <p class="price-price">Kategory</p>
+                        <!-- <div class="price">
+                            <p class="price-price"><span class="currency">$</span>250</p>
+                            <p class="time"></p>
+                        </div> -->
+                        <!-- <p class="bottom-text">
+                        срок готовности 1-2 месяца
+                        </p> -->
+                    </div>
+                    <div class="content">
+                        <!-- <ul class="pricing-item-list">
+                            <li>образ в обмотке</li>
+                            <li>один образ в костюмчике и с одним реквизитом (костюмчик и реквизит на выбор)</li>
+                            <li>фото с родителями</li>
+                            <li> до 20-ти фото в обработке (на выбор фотографа)</li>
+                            <li>результат на флешке в подарочной упаковке</li>
+                        </ul> -->
+                        <a href="#" class="main-btn">Перейти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- <div id="lightgalleryIndex" class="row index-small-gall">
