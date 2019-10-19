@@ -18,7 +18,7 @@
     <!-- lightgall css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.css">
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}?1" rel="stylesheet">
 </head>
 
 <body>
