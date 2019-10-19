@@ -34,7 +34,7 @@
                             <li><a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
-                            <li><a href="{{ route('pricing') }}">цены</a></li>
+{{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>

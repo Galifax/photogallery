@@ -26,7 +26,7 @@
         <ul id="lightgallery" class="grid portfolio-list">
             @foreach($galleries as $photo)
                 <li class="horizontal gallery-item design" data-src="{{ $photo->getPhoto() }}"
-                    data-sub-html="<h4>Fading Light</h4>">
+                    data-sub-html="<h4>{{ $photo->name }}</h4>">
                     <a href="">
                         <img class="img-responsive" src="{{ $photo->getPhoto() }}">
                         <span class="img-title">{{ $photo->name }}</span>
@@ -35,9 +35,14 @@
             @endforeach
         </ul>
 
-        <div class="load-more">
-            <button class="main-btn">Load More</button>
+        <div id="pagination">
+            {{ $galleries->links() }}
         </div>
+
+
+{{--        <div class="load-more">--}}
+{{--            <button class="main-btn">Load More</button>--}}
+{{--        </div>--}}
     </div>
 
     <!-- <div class="welcome-promo">

@@ -9,7 +9,7 @@
     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20309.075323923767!2d30.4721233!3d50.4851493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1570607856770!5m2!1sru!2sua"
     width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 <div class="container" style="margin-top: 107px;margin-bottom: 50px;">
-    
+
     <div class="d-flex justify-content-center" style="margin-top:107px;">
         <img class="zaika" src="/img/zaika.jpg" alt="zaika">
     </div>
@@ -27,10 +27,7 @@
                                 Phone:
                             </li>
                             <li class="contact-list-item">
-                                <a href="">(719) 445-2808;</a>
-                            </li>
-                            <li class="contact-list-item">
-                                <a href="">​​​​​​​(719) 445-2809</a>
+                                <a href="">+38(063)127-43-91</a>
                             </li>
                         </ul>
                     </div>
@@ -68,7 +65,7 @@
                                 E-mail:
                             </li>
                             <li class="contact-list-item">
-                                <a href="">info@demolink.org</a>
+                                <a href="">zyrinayliana5@gmail.com</a>
                             </li>
                         </ul>
                     </div>

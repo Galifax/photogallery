@@ -20,12 +20,12 @@
                 <div class="stock_content">
                     <h3 class="stock_title">{{ $stock->name }}</h3>
                     <span class="stock_time">{{ $stock->time_from }} - {{ $stock->time_to }}</span>
-                    <p class="stock_descr">{{ $stock->text }}</p>
+                    <p class="stock_descr">{!! $stock->announce !!}</p>
 
-                    <div class="collapse" id="collapseExample">
-                        <p class="stock_descr">{{ $stock->text }}</p>
+                    <div class="collapse" id="collapseExample{{ $stock->id }}">
+                        <p class="stock_descr">{!! $stock->content !!}</p>
                     </div>
-                    <a class="show-more" data-toggle="collapse" href="#collapseExample" role="button"
+                    <a class="show-more" data-toggle="collapse" href="#collapseExample{{ $stock->id }}" role="button"
                             aria-expanded="false" aria-controls="collapseExample">
                             Узнать больше
                     </a>
