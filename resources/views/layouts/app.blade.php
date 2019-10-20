@@ -12,7 +12,7 @@
     <meta name="keywords" content="@yield('keywords')">
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic" rel="stylesheet">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- lightgall css  -->
@@ -63,7 +63,7 @@
 
         <style>
             footer {
-                background: #343437;
+                background: #FCD1E5;
                 padding-top: 55px;
                 padding-bottom: 55px;
                 text-align: center;
@@ -73,7 +73,7 @@
                 font-weight: 700;
                 font-style: normal;
                 font-family: 'Roboto Mono', monospace;
-                color: #ffffff;
+                color: #6C0822;
                 font-size: 24px;
                 line-height: 1.3;
                 letter-spacing: 7px;
@@ -83,13 +83,13 @@
                 font-weight: 400;
                 font-style: normal;
                 font-family: 'Roboto Mono', monospace;
-                color: #ffffff;
+                color: #6C0822;
                 font-size: 12px;
                 line-height: 1.2;
                 letter-spacing: 0px;
             }
             .copy-r a{
-                color:#d1c8bc;
+                color:#000;
             }
 
         </style>

@@ -1,13 +1,13 @@
 body {
-  font-family: "Pangolin", cursive;
+  font-family: "Marck Script", cursive;
 }
 
 .main-btn {
   font-weight: 700;
   font-style: normal;
-  color: #ffffff;
-  background-color: #616165;
-  border-color: #616165;
+  color: #6C0822;
+  background-color: #FCD1E5;
+  border-color: #FCD1E5;
   font-size: 14px;
   padding: 17px 29px;
   position: relative;
@@ -75,8 +75,8 @@ body {
 .main-btn:active,
 .main-btn:focus {
   color: #ffffff;
-  background-color: #d1c8bc;
-  border-color: #d1c8bc;
+  background-color: #6C0822;
+  border-color: #6C0822;
   outline: none;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .main-header {
-  background-color: #343437;
+  background-color: #FCD1E5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -150,7 +150,7 @@ body {
   letter-spacing: 0.48px;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff;
+  color: #6C0822;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -169,7 +169,7 @@ body {
     height: fit-content;
     top: 38px;
     left: 50%;
-    background-color: #343437;
+    background-color: #FCD1E5;
     align-items: center;
     left: 0;
     left: 50%;
@@ -216,7 +216,7 @@ body {
 }
 
 .contacts .contact-item .contact-list .contact-list-item a:hover {
-  color: #d1c8bc;
+  color: #FCD1E5;
 }
 
 form input,
@@ -306,7 +306,7 @@ form .form-actions {
 
 .home-header .home-nav .home-nav-list .home-nav-list-item a:hover,
 .home-header .home-nav .home-nav-list .home-nav-list-item a .active {
-  color: #d1c8bc;
+  color: #FCD1E5;
   text-decoration: none;
 }
 
@@ -367,7 +367,7 @@ form .form-actions {
 }
 
 .subscribe-promo {
-  background: #343437;
+  background: #FCD1E5;
   text-align: center;
   padding: 50px 0px;
   margin-top: 80px;
@@ -419,7 +419,7 @@ form .form-actions {
 }
 
 .subscribe-promo .main-btn {
-  background-color: #d1c8bc;
+  background-color: #FCD1E5;
   text-transform: uppercase;
 }
 
@@ -480,7 +480,7 @@ form .form-actions {
   font-weight: 400;
   font-style: normal;
   /* color: #7f7f7f; */
-  color: #343437;
+  color: #FCD1E5;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0px;
@@ -751,7 +751,7 @@ form .form-actions {
 }
 
 .price-block {
-  background-color: #d1c8bc;
+  background-color: #FCD1E5;
   text-align: center;
   min-height: 300px;
 }
@@ -851,7 +851,7 @@ form .form-actions {
   transform: translate(0, -50%);
   z-index: 0;
   font: 14px/14px FontAwesome;
-  color: #d1c8bc;
+  color: #FCD1E5;
   content: "-";
   text-align: center;
 }
@@ -908,35 +908,6 @@ form .form-actions {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0px;
-}
-
-.main-btn {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
-  color: #ffffff;
-  background-color: #616165;
-  border-color: #616165;
-  font-size: 14px;
-  padding: 17px 29px;
-  position: relative;
-  text-align: center;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  transition: 0.3s;
-  line-height: 18px;
-  border: 1px solid;
-  letter-spacing: 0.56px;
-  cursor: pointer;
-}
-
-.main-btn:hover,
-.main-btn:active,
-.main-btn:focus {
-  color: #ffffff;
-  background-color: #d1c8bc;
-  border-color: #d1c8bc;
-  outline: none;
 }
 
 .categories-list {
