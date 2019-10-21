@@ -1,7 +1,19 @@
 // main
 body{
-    font-family: 'Marck Script', cursive;
+    // font-family: 'Marck Script', cursive;
+    font-family: 'Pangolin', cursive;
     
+}
+.bg-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d-flex-juctify-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .main-btn {
     
@@ -40,6 +52,30 @@ body{
 .max-width{
     max-width: 520px;
     margin: auto;
+}
+
+#imageGallery{
+    height:600px!important;
+    @media screen and (max-width:768px){
+        height:500px!important;
+    }
+    @media screen and (max-width:500px){
+        height:400px!important;
+    }
+    li{
+        // position: relative;
+        // height: 0;
+        // width: 100%;
+        // padding-top: 100%;
+        cursor: pointer;
+        img{
+            // position: absolute;
+            // height: 100%;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%,-50%);
+        }
+    }
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -126,8 +162,8 @@ body{
                 margin:0px 10px;
 
                 a {
-                    padding: 10px;
-                    font-size: 12px;
+                    padding: 14px;
+                    font-size: 14px;                
                     line-height: 19px;
                     position: relative;
                     display: block;
@@ -348,6 +384,7 @@ form {
             .home-header-promo-title {
                 font-weight: 700;
                 font-style: normal;
+                font-family: 'Marck Script', cursive;
                 
                 // color: #ffffff;
                 font-size: calc(20px + 5vmin);
@@ -365,7 +402,7 @@ form {
             .home-header-promo-text {
                 font-weight: 400;
                 font-style: normal;
-                
+                font-family: 'Marck Script', cursive;
                 // color: #ffffff;
                 font-size: calc(10px + 1vmin);
                 line-height: 1.7;
@@ -749,7 +786,8 @@ form {
 
 // Price 
     .pricing-item{
-        margin:0 0 30px;
+        margin: 0 15px 30px;
+        min-width: 300px;
     }
     .price-block {
         background-color: #FCD1E5;

@@ -1,5 +1,17 @@
 body {
-  font-family: "Marck Script", cursive;
+  font-family: "Pangolin", cursive;
+}
+
+.bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.d-flex-juctify-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-btn {
@@ -36,6 +48,26 @@ body {
 .max-width {
   max-width: 520px;
   margin: auto;
+}
+
+#imageGallery {
+  height: 600px !important;
+}
+
+@media screen and (max-width: 768px) {
+  #imageGallery {
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #imageGallery {
+    height: 400px !important;
+  }
+}
+
+#imageGallery li {
+  cursor: pointer;
 }
 
 @-webkit-keyframes fadeIn {
@@ -139,8 +171,8 @@ body {
 }
 
 .main-header .main-header-nav .main-header-list li a {
-  padding: 10px;
-  font-size: 12px;
+  padding: 14px;
+  font-size: 14px;
   line-height: 19px;
   position: relative;
   display: block;
@@ -347,6 +379,7 @@ form .form-actions {
 .home-header .home-header-promo .home-header-promo-title {
   font-weight: 700;
   font-style: normal;
+  font-family: "Marck Script", cursive;
   font-size: calc(20px + 5vmin);
   letter-spacing: 14px;
   margin-bottom: 30px;
@@ -361,6 +394,7 @@ form .form-actions {
 .home-header .home-header-promo .home-header-promo-text {
   font-weight: 400;
   font-style: normal;
+  font-family: "Marck Script", cursive;
   font-size: calc(10px + 1vmin);
   line-height: 1.7;
   letter-spacing: 0px;
@@ -747,7 +781,8 @@ form .form-actions {
 }
 
 .pricing-item {
-  margin: 0 0 30px;
+  margin: 0 15px 30px;
+  min-width: 300px;
 }
 
 .price-block {

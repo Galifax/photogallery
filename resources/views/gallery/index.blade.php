@@ -12,7 +12,7 @@
 <section class="gallery" style="overflow: hidden;">
     <div class="container">
         <h3 class="section-title">
-            OUR GALLERY
+        
         </h3>
         {{--        <div class="filter-actions">--}}
         {{--            <button type="button" class="filter-btn main-btn" data-filter="*">All</button>--}}

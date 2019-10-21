@@ -13,10 +13,15 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap&subset=cyrillic" rel="stylesheet">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- lightgall css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
 
     <link href="{{ asset('css/app.css') }}?1" rel="stylesheet">
 </head>
@@ -34,7 +39,7 @@
                             <li><a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
-{{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
+                            {{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
@@ -56,7 +61,9 @@
                 </h3>
             </div>
             <p class="copy-r">
-                Тел:<a href="tel:0631274391">+38(063)127-43-91</a>, E-mail:<a href="mailto:zyrinayliana5@gmail.com">zyrinayliana5@gmail.com</a>, Instagram:<a href="https://www.instagram.com/photozyrina/?r=nametag">@photozyrina </a>
+                Тел:<a href="tel:0631274391">+38(063)127-43-91</a>, E-mail:<a
+                    href="mailto:zyrinayliana5@gmail.com">zyrinayliana5@gmail.com</a>, Instagram:<a
+                    href="https://www.instagram.com/photozyrina/?r=nametag">@photozyrina </a>
 
             </p>
         </footer>
@@ -88,8 +95,9 @@
                 line-height: 1.2;
                 letter-spacing: 0px;
             }
-            .copy-r a{
-                color:#000;
+
+            .copy-r a {
+                color: #000;
             }
 
         </style>
@@ -105,12 +113,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
     <!-- filter -->
 
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 
     <script>
         $(document).ready(function () {
+            $('#imageGallery').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                thumbItem: 9,
+                slideMargin: 0,
+                enableDrag: false,
+                currentPagerPosition: 'left',
+                onSliderLoad: function (el) {
+                    el.lightGallery({
+                        selector: '#imageGallery .lslide'
+                    });
+                },
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            thumbItem: 5,
+                            verticalHeight: 400,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            verticalHeight: 300,
+                            slideMove: 3
+                        }
+                    }
+                ]
+            });
+
+
             $('#lightgallery').lightGallery({
                 pager: true
             });
@@ -148,13 +190,14 @@
                 });
             });
 
-            $(".mob-menu-btn").click(function(){
+            $(".mob-menu-btn").click(function () {
                 $(".main-header-list").toggleClass("closed");
             });
-            $(".home-menu-btn").click(function(){
+            $(".home-menu-btn").click(function () {
                 $(".home-nav-list").toggleClass("closed");
             });
         });
+
     </script>
 </body>
 
