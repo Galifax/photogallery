@@ -10,9 +10,9 @@
 </div>
 <div class="container">
     <ul class="categories-list">
-        @foreach($categories as $category)
+        @foreach($categories as $item)
         <li>
-            <a href="{{ route('pricingShow', ['slug' => $category->slug]) }}" class="main-btn">{{ $category->name }}</a>
+            <a href="{{ route('pricingShow', ['slug' => $item->slug]) }}" class="main-btn">{{ $item->name }}</a>
         </li>
         @endforeach
     </ul>
