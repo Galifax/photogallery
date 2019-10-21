@@ -8,7 +8,7 @@
 <div class="d-flex justify-content-center" style="margin-top:107px;">
     <img class="zaika" src="/img/zaika.jpg" alt="zaika">
 </div>
-<div class="container">
+<div class="container" style="margin-bottom:20px;">
     <ul class="categories-list">
         @foreach($categories as $item)
         <li>
@@ -17,30 +17,32 @@
         @endforeach
     </ul>
 
-    <div class="pricing-item row">
-        <div class="price-block col-xs-12 col-md-6">
-            <h3 class="block-title">{{ $category->name }}</h3>
-            <div class="price">
-                <p class="price-price"><span class="currency">$</span>{{ $category->price }}</p>
-                <p class="time"></p>
+    <div class="d-flex-juctify-center">
+        @foreach($category->subcategory as $subcategory)
+        <div class="pricing-item" >
+            <div class="price-block">
+                <h3 class="block-title">{{ $subcategory->name }}</h3>
+                <div class="price">
+                    <p class="price-price"><span class="currency">$</span>{{ $subcategory->price }}</p>
+                    <p class="time"></p>
+                </div>
+                <p class="bottom-text">
+                    срок готовности {{ $subcategory->time }}
+                </p>
             </div>
-            <p class="bottom-text">
-                срок готовности {{ $category->time }}
-            </p>
+            <div class="content">
+                {!! $subcategory->content !!}
+            </div>
         </div>
-        <div class="content col-xs-12 col-md-6">
-            {!! $category->content !!}
-        </div>
+        @endforeach
     </div>
 
-    <ul id="lightgallery" class="grid portfolio-list">
-        @foreach($gallery as $item)
-        <li class="horizontal gallery-item design" data-src="{{ $item->getPhoto() }}"
-            data-sub-html="<h4>{{ $item->name }}</h4>">
-            <a href="">
-                <img class="img-responsive" src="{{ $item->getPhoto() }}">
-                <span class="img-title">{{ $item->name }}</span>
-            </a>
+    <ul id="imageGallery">
+    @foreach($gallery as $item)
+        <li data-thumb="{{ $item->getPhoto() }}"
+            data-src="{{ $item->getPhoto() }}">
+            <img
+                src="{{ $item->getPhoto() }}" width="100%"/>
         </li>
         @endforeach
     </ul>

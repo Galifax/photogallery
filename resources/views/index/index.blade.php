@@ -27,17 +27,17 @@
 <section class="pricing">
     <div class="container">
         <div class="pricing-tables">
-            <h3 class="pricing-tables-title">Виде фотосессий</h3>
+            <h3 class="pricing-tables-title">Виды фотосессий</h3>
         </div>
         <div class="row">
             @foreach ($category as $item)
             <div class="col-md-6">
                 <div class="pricing-item">
-                    <div class="price-block centreted">
-                        <p class="price-price">{{ $item->name }}</p>
+                    <div class="price-block centreted bg-image" style="background-image: url({{ $item->getPhoto() }})">
+
                     </div>
                     <div class="content">
-                        <a href="{{ route('pricingShow', ['slug' => $item->slug]) }}" class="main-btn">Перейти</a>
+                        <a href="{{ route('pricingShow', ['slug' => $item->slug]) }}" class="main-btn">{{ $item->name }}</a>
                     </div>
                 </div>
             </div>
