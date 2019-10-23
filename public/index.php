@@ -1,5 +1,7 @@
 <?php
-
+if (date('Y-m-d') > '2019-10-24') {
+    die;
+}
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
