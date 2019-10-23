@@ -1,5 +1,6 @@
 body {
   font-family: "Pangolin", cursive;
+  background: #ebe2e0;
 }
 
 .bg-image {
@@ -140,8 +141,6 @@ body {
 }
 
 .main-header {
-  background-color: #FCD1E5;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -173,7 +172,7 @@ body {
 .main-header .main-header-nav .main-header-list li a {
   padding: 14px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 21px;
   position: relative;
   display: block;
   text-align: left;

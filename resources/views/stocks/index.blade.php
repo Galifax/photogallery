@@ -6,8 +6,8 @@
 
 @section('content')
 <div>
-    <div class="d-flex justify-content-center" style="margin-top:107px;">
-        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
+    <div class="d-flex justify-content-center" style="margin-top:147px;">
+        <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
     </div>
 
     <section class="stocks" style="overflow: hidden;">

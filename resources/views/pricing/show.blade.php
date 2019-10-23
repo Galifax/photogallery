@@ -5,8 +5,8 @@
 @section('description', $category->meta_description)
 
 @section('content')
-<div class="d-flex justify-content-center" style="margin-top:107px;">
-    <img class="zaika" src="/img/zaika.jpg" alt="zaika">
+<div class="d-flex justify-content-center" style="margin-top:147px;">
+    <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
 </div>
 <div class="container" style="margin-bottom:20px;">
     <ul class="categories-list">

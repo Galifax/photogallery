@@ -10,8 +10,8 @@
     width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 <div class="container" style="margin-top: 107px;margin-bottom: 50px;">
 
-    <div class="d-flex justify-content-center" style="margin-top:107px;">
-        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
+    <div class="d-flex justify-content-center" style="margin-top:147px;">
+        <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
     </div>
 
     <div class="row contacts">
