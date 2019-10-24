@@ -40,17 +40,50 @@
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
                             {{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
+                            <li><img class="logo" src="/img/zaika.jpg" alt="zaika"></li>
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
+                            <li><button type="button" class="main-btn" data-toggle="modal"
+                                    data-target="#exampleModal">Заказать фотосессию</button></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
                     </nav>
                 </div>
             </div>
         </header>
-        <style>
 
-        </style>
+
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Заказать фотосессию</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="{{ route('callback.send') }}" method="post">
+                        <div class="modal-body">
+                                {{ csrf_field() }}
+                                <input name="name" Placeholder="Ваше имя*" required type="text">
+                                <input name="email" Placeholder="Ваш E-mail *" required type="e-mail">
+                                <input name="phone" Placeholder="Ваш телефон" type="text">
+                                <textarea name="message" Placeholder="Ваше сообщение *" required id="" rows="4"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="main-btn">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div>
             @yield('content')
         </div>
@@ -69,6 +102,10 @@
         </footer>
 
         <style>
+            .logo {
+                max-height: 140px;
+            }
+
             footer {
                 background: #FCD1E5;
                 padding-top: 55px;
@@ -196,6 +233,8 @@
             $(".home-menu-btn").click(function () {
                 $(".home-nav-list").toggleClass("closed");
             });
+
+
         });
 
     </script>

@@ -5,8 +5,8 @@
 @section('description', 'Gallery')
 
 @section('content')
-<div class="d-flex justify-content-center" style="margin-top:107px;">
-        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
+<div class="d-flex justify-content-center" style="margin-top:147px;">
+        <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
     </div>
 
 <section class="gallery" style="overflow: hidden;">

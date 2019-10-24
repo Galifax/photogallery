@@ -5,11 +5,11 @@
 @section('description', 'Home')
 
 @section('content')
-<section class="home-header" style="margin-top:107px;">
+<section class="home-header" style="margin-top:147px;">
 
     <div class="home-header-promo">
 
-        <img class="fade-in" src="/img/zaika.jpg" alt="zaika">
+        <!-- <img class="fade-in" src="/img/zaika.jpg" alt="zaika">s -->
 
         <h2 class="home-header-promo-title">
             ДОБРО ПОЖАЛОВАТЬ <br>

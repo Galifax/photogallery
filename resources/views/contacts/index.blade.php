@@ -10,8 +10,8 @@
     width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
 <div class="container" style="margin-top: 107px;margin-bottom: 50px;">
 
-    <div class="d-flex justify-content-center" style="margin-top:107px;">
-        <img class="zaika" src="/img/zaika.jpg" alt="zaika">
+    <div class="d-flex justify-content-center" style="margin-top:147px;">
+        <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
     </div>
 
     <div class="row contacts">
@@ -76,15 +76,15 @@
     <!-- contacts row  -->
 
     <form action="{{ route('callback.send') }}" method="post">
-        {{ csrf_field() }}
-        <input name="name" Placeholder="Your Name *" required type="text">
-        <input name="email" Placeholder="Your E-mail *" required type="e-mail">
-        <input name="phone" Placeholder="Your phone" type="text">
-        <!-- <input name="website" Placeholder="Your Website" type="text">
-        <input name="company" Placeholder="Your Company" type="text"> -->
-        <textarea name="message" Placeholder="Your Message *" required id="" rows="4"></textarea>
-        <div class="form-actions">
-        <button class="main-btn">SEND MESSAGE</button>
+        <div class="modal-body">
+            {{ csrf_field() }}
+            <input name="name" Placeholder="Ваше имя*" required type="text">
+            <input name="email" Placeholder="Ваш E-mail *" required type="e-mail">
+            <input name="phone" Placeholder="Ваш телефон" type="text">
+            <textarea name="message" Placeholder="Ваше сообщение *" required id="" rows="4"></textarea>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="main-btn">Заказать</button>
         </div>
     </form>
 </div>
