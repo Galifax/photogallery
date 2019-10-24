@@ -29,29 +29,35 @@
 <body>
     <div id="app">
         <header class="main-header">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <!-- <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
                     </div> -->
                     <nav class="main-header-nav col-sm-12">
+                        <div>
+                            <button type="button" class="main-btn" data-toggle="modal"
+                                data-target="#callMee">Перезвоните мне</button>
+                            <a href="tel:0631274391">+38(063)127-43-91</a>
+                        </div>
+
                         <ul class="main-header-list closed">
-                            <li><a href="{{ route('home') }}">Главная</a></li>
+                            <li></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
                             {{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
-                            <li><img class="logo" src="/img/zaika.jpg" alt="zaika"></li>
+                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/zaika.jpg"
+                                        alt="zaika"><br>Главная</a></li>
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
-                            <li><button type="button" class="main-btn" data-toggle="modal"
-                                    data-target="#exampleModal">Заказать фотосессию</button></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
+                        <button type="button" class="main-btn" data-toggle="modal" data-target="#exampleModal">Заказать
+                            фотосессию</button>
                     </nav>
                 </div>
             </div>
         </header>
-
 
 
         <!-- Button trigger modal -->
@@ -80,6 +86,30 @@
                             <button type="submit" class="main-btn">Заказать</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="callMee" tabindex="-1" role="dialog" aria-labelledby="callMee"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="callMee">Позвонить мне</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <input name="name" Placeholder="Ваше имя*" required type="text">
+                            <input name="phone" Placeholder="Ваш телефон" type="text">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="main-btn">Позвонить</button>
+                    </div>
                 </div>
             </div>
         </div>

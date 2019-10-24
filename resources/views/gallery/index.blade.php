@@ -5,7 +5,7 @@
 @section('description', 'Gallery')
 
 @section('content')
-<div class="d-flex justify-content-center" style="margin-top:147px;">
+<div class="d-flex justify-content-center">
         <!-- <img class="zaika" src="/img/zaika.jpg" alt="zaika"> -->
     </div>
 

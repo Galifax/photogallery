@@ -139,6 +139,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 999;
+    padding-top: 10px;
 
     .header-logo {
         padding: 15px 0;
@@ -149,7 +150,12 @@ body{
 
     .main-header-nav {
         position: relative;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main-btn{
+            padding: 8px 12px;
+        }
         .main-header-list {
             list-style: none;
             display: flex;
@@ -160,10 +166,10 @@ body{
             margin: 0;
 
             li {
-                margin:0px 10px;
+                margin:0px 4px;
 
                 a {
-                    padding: 14px;
+                    padding: 8px;
                     font-size: 14px;                
                     line-height: 21px;
                     position: relative;
@@ -182,29 +188,32 @@ body{
             }
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:951px) {
             text-align: center;
 
             .main-header-list {
                 width: 300px;
                 flex-direction: column;
-                position: fixed;
+                position: absolute;
                 height: fit-content;
-                top: 38px;
+                top: 55px;
                 left: 50%;
                 background-color: #FCD1E5;
                 align-items: center;
                 left: 0;
                 left: 50%;
                 transform: translateX(-50%);
+                z-index: 9999;
 
                 &.closed {
                     opacity: 0;
+                    display: none;
                 }
 
             }
             .mob-menu-btn{
                 display: block;
+                color: #6C0822;
             }
         }
     }
@@ -290,7 +299,7 @@ form {
     background-position: top;
     background-repeat: no-repeat;
     text-align: center;
-    min-height: 80vh;
+    // min-height: 80vh;
     position: relative;
     z-index: 1;
 
@@ -571,6 +580,7 @@ form {
                 min-width: calc(100% + 40px);
                 transform: translate(-50%, -50%);
                 transition: .7s;
+                max-height: 100%
             }
         }
 
