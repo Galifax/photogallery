@@ -582,7 +582,7 @@ form .form-actions {
   min-width: calc(100% + 40px);
   transform: translate(-50%, -50%);
   transition: 0.7s;
-  max-height: 100%;
+  max-width: 115%;
 }
 
 .gallery-item .img-title {
@@ -793,6 +793,7 @@ form .form-actions {
 .pricing-item {
   margin: 0 15px 30px;
   min-width: 300px;
+  max-width: 500px;
 }
 
 .price-block {
