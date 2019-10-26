@@ -1,7 +1,7 @@
 <?php
-if (date('Y-m-d') > '2019-10-24') {
-    die;
-}
+//if (date('Y-m-d') > date('Y-m-d', '2019-10-28')) {
+//    die;
+//}
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
