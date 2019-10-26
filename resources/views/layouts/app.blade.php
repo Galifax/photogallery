@@ -61,7 +61,7 @@
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             {{--<li><a href="{{ route('pricing') }}">цены</a></li>--}}
                             <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
-                                        alt="#"></a></li>
+                                        alt="#"><br>NEWBORN END FAMILI PHOTOGRAPHER</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
                             <li><a href="#">Реквизит</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>

@@ -34,6 +34,7 @@ a {
   font-weight: 700;
   font-style: normal;
   color: #6C0822;
+  background: #ddd;
   font-size: 14px;
   padding: 17px 29px;
   position: relative;
@@ -42,7 +43,6 @@ a {
   -webkit-backface-visibility: hidden;
   transition: 0.3s;
   line-height: 18px;
-  border: 1px solid;
   letter-spacing: 0.56px;
   cursor: pointer;
   display: block;
@@ -420,7 +420,7 @@ form .form-actions {
   font-weight: 400;
   font-style: normal;
   font-family: "Marck Script", cursive;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 1.2vw);
   line-height: 1.7;
   letter-spacing: 0px;
 }
@@ -814,6 +814,10 @@ form .form-actions {
 .price-block {
   text-align: center;
   min-height: 300px;
+}
+
+.price-block:hover {
+  transform: scale(1.02);
 }
 
 .price-block .price {
