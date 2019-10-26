@@ -29,31 +29,45 @@
 <body>
     <div id="app">
         <header class="main-header">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <!-- <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
                     </div> -->
                     <nav class="main-header-nav col-sm-12">
-                        <div>
-                            <button type="button" class="main-btn" data-toggle="modal"
-                                data-target="#callMee">Перезвоните мне</button>
-                            <a href="tel:0631274391">+38(063)127-43-91</a>
-                        </div>
+                        <div class="d-flex justify-content-between" style="width:100%;flex-wrap:wrap">
+                            <span class="d-flex"><a class="socials"
+                                    href="https://www.instagram.com/photozyrina/?r=nametag"><img class="logo"
+                                        src="/img/icon-inst.png" alt="#"></a>
+                                <a class="socials" href="https://www.facebook.com/photozyrina/"><img class="logo"
+                                        src="/img/icon-fb.png" alt="#"></a></span>
 
+                            <div class="d-flex" style="min-width: 316px;max-width: 360px;width: 100%;justify-content: space-between;align-items: flex-start;">
+                                <div style="margin-right: 5px;">
+                                    <button type="button" class="main-btn" data-toggle="modal"
+                                        data-target="#callMee">Перезвоните мне</button>
+                                    <a href="tel:0631274391">+38(063)127-43-91</a>
+                                </div>
+
+                                <button type="button" class="main-btn" data-toggle="modal"
+                                    data-target="#exampleModal">Заказать
+                                    фотосессию</button>
+                            </div>
+
+                        </div>
                         <ul class="main-header-list closed">
-                            <li></li>
+                            <li> <a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
-                            <li><a href="{{ route('gallery') }}">портфолио</a></li>
-                            {{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
-                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/zaika.jpg"
-                                        alt="zaika"><br>Главная</a></li>
                             <li><a href="{{ route('stocks') }}">акции</a></li>
+                            {{--<li><a href="{{ route('pricing') }}">цены</a></li>--}}
+                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
+                                        alt="#"></a></li>
+                            <li><a href="{{ route('gallery') }}">портфолио</a></li>
+                            <li><a href="#">Реквизит</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
-                        <button type="button" class="main-btn" data-toggle="modal" data-target="#exampleModal">Заказать
-                            фотосессию</button>
+
                     </nav>
                 </div>
             </div>
@@ -90,8 +104,7 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="callMee" tabindex="-1" role="dialog" aria-labelledby="callMee"
-            aria-hidden="true">
+        <div class="modal fade" id="callMee" tabindex="-1" role="dialog" aria-labelledby="callMee" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -136,7 +149,7 @@
             }
 
             footer {
-                background: #FCD1E5;
+                /* background: #FCD1E5; */
                 padding-top: 55px;
                 padding-bottom: 55px;
                 text-align: center;
