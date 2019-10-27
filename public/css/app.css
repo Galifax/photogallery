@@ -3,6 +3,22 @@ body {
   background: #ebe2e0;
 }
 
+.mob-none img {
+  max-height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mob-none img {
+    max-height: 140px;
+  }
+}
+
+@media screen and (max-width: 951px) {
+  .mob-none {
+    display: none;
+  }
+}
+
 .socials {
   display: block;
   width: 30px;
@@ -158,6 +174,8 @@ a {
   width: 100%;
   z-index: 999;
   padding-top: 10px;
+  max-width: 870px;
+  margin: auto;
 }
 
 .main-header .header-logo {
@@ -171,6 +189,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .main-header .main-header-nav .main-btn {
@@ -221,7 +240,7 @@ a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    top: 95px;
+    top: 100%;
     left: 50%;
     background-color: #ddd;
     align-items: center;

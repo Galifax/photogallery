@@ -63,7 +63,7 @@
                             <li class="mob-none"><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
                                         alt="#"><br>NEWBORN END FAMILI PHOTOGRAPHER</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
-                            <li><a href="#">Реквизит</a></li>
+                            <li><a href="#">Реквизиты</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
@@ -144,10 +144,6 @@
         </footer>
 
         <style>
-            .logo {
-                max-height: 140px;
-            }
-
             footer {
                 /* background: #FCD1E5; */
                 padding-top: 55px;
