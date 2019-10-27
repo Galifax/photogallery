@@ -6,9 +6,16 @@ body{
     
 }
 .mob-none{
-@media screen and(max-width:951){
-    display: none;
-}   
+    img{    max-height: 200px;}
+
+    @media screen and (max-width: 1000px){
+        img{
+        max-height: 140px;
+        }
+    }
+    @media screen and (max-width:951px){
+        display: none;
+    }   
 }
 .socials{
     display: block;
@@ -175,6 +182,7 @@ a{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
         .main-btn{
             padding: 8px 12px;
         }
@@ -219,7 +227,7 @@ a{
                 flex-direction: column;
                 position: absolute;
                 height: fit-content;
-                top: 95px;
+                top: 100%;
                 left: 50%;
                 background-color: #ddd;
                 align-items: center;
