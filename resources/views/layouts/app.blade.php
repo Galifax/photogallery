@@ -60,7 +60,7 @@
                             <li><a href="{{ route('about') }}">о себе</a></li>
                             <li><a href="{{ route('stocks') }}">акции</a></li>
                             {{--<li><a href="{{ route('pricing') }}">цены</a></li>--}}
-                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
+                            <li class="mob-none"><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
                                         alt="#"><br>NEWBORN END FAMILI PHOTOGRAPHER</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
                             <li><a href="#">Реквизит</a></li>
@@ -132,7 +132,7 @@
         <footer>
             <div class="conteiner">
                 <h3 class="footer-title">
-                    Zarina Yuliana
+                    Zyrina Yuliana
                 </h3>
             </div>
             <p class="copy-r">
