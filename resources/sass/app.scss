@@ -5,6 +5,11 @@ body{
     background: #ebe2e0;
     
 }
+.mob-none{
+@media screen and(max-width:951){
+    display: none;
+}   
+}
 .socials{
     display: block;
     width: 30px;
@@ -154,6 +159,8 @@ a{
     width: 100%;
     z-index: 999;
     padding-top: 10px;
+    max-width: 870px;
+    margin: auto;
 
     .header-logo {
         padding: 15px 0;
