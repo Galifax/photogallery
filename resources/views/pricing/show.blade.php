@@ -23,7 +23,7 @@
             <div class="price-block">
                 <h3 class="block-title">{{ $subcategory->name }}</h3>
                 <div class="price">
-                    <p class="price-price"><span class="currency">$</span>{{ $subcategory->price }}</p>
+                    <p class="price-price"><span class="currency">₴</span>{{ $subcategory->price }}</p>
                     <p class="time"></p>
                 </div>
                 <p class="bottom-text">
