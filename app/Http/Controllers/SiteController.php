@@ -8,6 +8,7 @@ use App\Category;
 use App\Gallery;
 use App\Stock;
 use App\CallMe;
+use App\Requisite;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -25,8 +26,8 @@ class SiteController extends Controller
     }
     public function requisites()
     {
-        $about = AboutUs::where('id', 3)->first();
-        return view('requisites.index', compact('about'));
+        $galleries = Requisite::getGalleries();
+        return view('requisites.index', compact('galleries'));
     }
 
     public function gallery()
