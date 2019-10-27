@@ -10,6 +10,12 @@
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
+
+    <meta property="og:title" content="@yield('title')" />
+    <meta property="og:site_name" content="Zarina Yuliana"/>
+    <meta property="og:description" content="@yield('description')" />
+    <meta property="og:image" content="http://www.studio-tema.com.ua/img/logo.png" />
+
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic" rel="stylesheet">
@@ -29,31 +35,45 @@
 <body>
     <div id="app">
         <header class="main-header">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <!-- <div class="header-logo col-sm-12 col-lg-4">
                         <img src="/img/mt-1300-home-logo.png" alt="">
                     </div> -->
                     <nav class="main-header-nav col-sm-12">
-                        <div>
-                            <button type="button" class="main-btn" data-toggle="modal"
-                                data-target="#callMee">Перезвоните мне</button>
-                            <a href="tel:0631274391">+38(063)127-43-91</a>
-                        </div>
+                        <div class="d-flex justify-content-between" style="width:100%;flex-wrap:wrap">
+                            <span class="d-flex"><a class="socials"
+                                    href="https://www.instagram.com/photozyrina/?r=nametag"><img class="logo"
+                                        src="/img/icon-inst.png" alt="#"></a>
+                                <a class="socials" href="https://www.facebook.com/photozyrina/"><img class="logo"
+                                        src="/img/icon-fb.png" alt="#"></a></span>
 
+                            <div class="d-flex" style="min-width: 316px;max-width: 360px;width: 100%;justify-content: space-between;align-items: flex-start;">
+                                <div style="margin-right: 5px;">
+                                    <button type="button" class="main-btn" data-toggle="modal"
+                                        data-target="#callMee">Перезвоните мне</button>
+                                    <a href="tel:0631274391">+38(063)127-43-91</a>
+                                </div>
+
+                                <button type="button" class="main-btn" data-toggle="modal"
+                                    data-target="#exampleModal">Заказать
+                                    фотосессию</button>
+                            </div>
+
+                        </div>
                         <ul class="main-header-list closed">
-                            <li></li>
+                            <li> <a href="{{ route('home') }}">Главная</a></li>
                             <li><a href="{{ route('about') }}">о себе</a></li>
-                            <li><a href="{{ route('gallery') }}">портфолио</a></li>
-                            {{--                            <li><a href="{{ route('pricing') }}">цены</a></li>--}}
-                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/zaika.jpg"
-                                        alt="zaika"><br>Главная</a></li>
                             <li><a href="{{ route('stocks') }}">акции</a></li>
+                            {{--<li><a href="{{ route('pricing') }}">цены</a></li>--}}
+                            <li><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
+                                        alt="#"><br>NEWBORN END FAMILI PHOTOGRAPHER</a></li>
+                            <li><a href="{{ route('gallery') }}">портфолио</a></li>
+                            <li><a href="{{ route('requisites') }}">Реквизиты</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
-                        <button type="button" class="main-btn" data-toggle="modal" data-target="#exampleModal">Заказать
-                            фотосессию</button>
+
                     </nav>
                 </div>
             </div>
@@ -91,8 +111,7 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="callMee" tabindex="-1" role="dialog" aria-labelledby="callMee"
-            aria-hidden="true">
+        <div class="modal fade" id="callMee" tabindex="-1" role="dialog" aria-labelledby="callMee" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -101,15 +120,16 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form action="" method="post">
+                    <form action="{{ route('callMe.send') }}" method="post">
+                        <div class="modal-body">
+                            {{ csrf_field() }}
                             <input name="name" Placeholder="Ваше имя*" required type="text">
-                            <input name="phone" Placeholder="Ваш телефон" type="text">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="main-btn">Позвонить</button>
-                    </div>
+                            <input name="phone" Placeholder="Ваш телефон*" type="text">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="main-btn">Позвонить</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -137,7 +157,7 @@
             }
 
             footer {
-                background: #FCD1E5;
+                /* background: #FCD1E5; */
                 padding-top: 55px;
                 padding-bottom: 55px;
                 text-align: center;

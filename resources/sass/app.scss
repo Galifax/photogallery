@@ -5,6 +5,19 @@ body{
     background: #ebe2e0;
     
 }
+.socials{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b5a296;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin: 10px
+}
+a{
+    color:grey;
+}
 .bg-image{
     background-position: center;
     background-size: cover;
@@ -21,8 +34,9 @@ body{
     font-weight: 700;
     font-style: normal;
     color: #6C0822;
-    background-color: #FCD1E5;
-    border-color:#FCD1E5;
+    background: #ddd;
+    // background-color: #FCD1E5;
+    // border-color:#FCD1E5;
     font-size: 14px;
     padding: 17px 29px;
     position: relative;
@@ -31,7 +45,7 @@ body{
     -webkit-backface-visibility: hidden;
     transition: .3s;
     line-height: 18px;
-    border: 1px solid;
+    // border: 1px solid;
     letter-spacing: .56px;
     cursor: pointer;
 
@@ -153,13 +167,15 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         .main-btn{
             padding: 8px 12px;
         }
         .main-header-list {
             list-style: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            width: 100%;
             align-items: center;
             height: 100%;
             padding: 0;
@@ -196,9 +212,9 @@ body{
                 flex-direction: column;
                 position: absolute;
                 height: fit-content;
-                top: 55px;
+                top: 95px;
                 left: 50%;
-                background-color: #FCD1E5;
+                background-color: #ddd;
                 align-items: center;
                 left: 0;
                 left: 50%;
@@ -251,7 +267,7 @@ body{
                     text-decoration: none;
 
                     &:hover {
-                        color: #FCD1E5;
+                        // color: #FCD1E5;
                     }
                 }
             }
@@ -350,7 +366,7 @@ form {
 
                     &:hover,
                     .active {
-                        color: #FCD1E5;
+                        // color: #FCD1E5;
                         text-decoration: none;
                     }
                 }
@@ -402,6 +418,10 @@ form {
                 letter-spacing: 14px;
                 margin-bottom: 30px;
 
+                @media screen and (max-width: 520px){
+                    font-size: 25px;
+                }
+
                 span {
                     font-size: calc(10px + 2vmin);
                     line-height: 100px;
@@ -414,7 +434,7 @@ form {
                 font-style: normal;
                 font-family: 'Marck Script', cursive;
                 // color: #ffffff;
-                font-size: calc(10px + 1vmin);
+                font-size: calc(10px + 1.2vw);
                 line-height: 1.7;
                 letter-spacing: 0px;
             }
@@ -422,7 +442,7 @@ form {
     }
 
     .subscribe-promo {
-        background: #FCD1E5;
+        // background: #FCD1E5;
         text-align: center;
         padding: 50px 0px;
         margin-top: 80px;
@@ -457,7 +477,7 @@ form {
         }
 
         .main-btn {
-            background-color: #FCD1E5;
+            // background-color: #FCD1E5;
             text-transform: uppercase;
 
             &:hover {
@@ -580,7 +600,7 @@ form {
                 min-width: calc(100% + 40px);
                 transform: translate(-50%, -50%);
                 transition: .7s;
-                max-height: 100%
+                max-width: 115%;
             }
         }
 
@@ -641,6 +661,7 @@ form {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: 125px;
         grid-auto-flow: dense;
+        padding: 0;
 
         height: auto !important;
         /* Fill all spaces with fitted images */
@@ -799,11 +820,15 @@ form {
     .pricing-item{
         margin: 0 15px 30px;
         min-width: 300px;
+        max-width: 500px;
     }
     .price-block {
-        background-color: #FCD1E5;
+        // background-color: #FCD1E5;
         text-align: center;
         min-height: 300px;
+        &:hover{
+            transform: scale(1.02);
+        }
     }
 
     .price-block .price {
@@ -903,7 +928,7 @@ form {
         transform: translate(0, -50%);
         z-index: 0;
         font: 14px/14px FontAwesome;
-        color: #FCD1E5;
+        // color: #FCD1E5;
         content: "-";
         text-align: center;
     }

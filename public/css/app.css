@@ -3,6 +3,21 @@ body {
   background: #ebe2e0;
 }
 
+.socials {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #b5a296;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin: 10px;
+}
+
+a {
+  color: grey;
+}
+
 .bg-image {
   background-position: center;
   background-size: cover;
@@ -19,8 +34,7 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #6C0822;
-  background-color: #FCD1E5;
-  border-color: #FCD1E5;
+  background: #ddd;
   font-size: 14px;
   padding: 17px 29px;
   position: relative;
@@ -29,7 +43,6 @@ body {
   -webkit-backface-visibility: hidden;
   transition: 0.3s;
   line-height: 18px;
-  border: 1px solid;
   letter-spacing: 0.56px;
   cursor: pointer;
   display: block;
@@ -157,6 +170,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .main-header .main-header-nav .main-btn {
@@ -166,7 +180,8 @@ body {
 .main-header .main-header-nav .main-header-list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   height: 100%;
   padding: 0;
@@ -206,9 +221,9 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    top: 55px;
+    top: 95px;
     left: 50%;
-    background-color: #FCD1E5;
+    background-color: #ddd;
     align-items: center;
     left: 0;
     left: 50%;
@@ -255,10 +270,6 @@ body {
 .contacts .contact-item .contact-list .contact-list-item a {
   color: #1e1d24;
   text-decoration: none;
-}
-
-.contacts .contact-item .contact-list .contact-list-item a:hover {
-  color: #FCD1E5;
 }
 
 form input,
@@ -347,7 +358,6 @@ form .form-actions {
 
 .home-header .home-nav .home-nav-list .home-nav-list-item a:hover,
 .home-header .home-nav .home-nav-list .home-nav-list-item a .active {
-  color: #FCD1E5;
   text-decoration: none;
 }
 
@@ -394,6 +404,12 @@ form .form-actions {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 520px) {
+  .home-header .home-header-promo .home-header-promo-title {
+    font-size: 25px;
+  }
+}
+
 .home-header .home-header-promo .home-header-promo-title span {
   font-size: calc(10px + 2vmin);
   line-height: 100px;
@@ -404,13 +420,12 @@ form .form-actions {
   font-weight: 400;
   font-style: normal;
   font-family: "Marck Script", cursive;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 1.2vw);
   line-height: 1.7;
   letter-spacing: 0px;
 }
 
 .subscribe-promo {
-  background: #FCD1E5;
   text-align: center;
   padding: 50px 0px;
   margin-top: 80px;
@@ -462,7 +477,6 @@ form .form-actions {
 }
 
 .subscribe-promo .main-btn {
-  background-color: #FCD1E5;
   text-transform: uppercase;
 }
 
@@ -582,7 +596,7 @@ form .form-actions {
   min-width: calc(100% + 40px);
   transform: translate(-50%, -50%);
   transition: 0.7s;
-  max-height: 100%;
+  max-width: 115%;
 }
 
 .gallery-item .img-title {
@@ -639,6 +653,7 @@ form .form-actions {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 125px;
   grid-auto-flow: dense;
+  padding: 0;
   height: auto !important;
   /* Fill all spaces with fitted images */
 }
@@ -793,12 +808,16 @@ form .form-actions {
 .pricing-item {
   margin: 0 15px 30px;
   min-width: 300px;
+  max-width: 500px;
 }
 
 .price-block {
-  background-color: #FCD1E5;
   text-align: center;
   min-height: 300px;
+}
+
+.price-block:hover {
+  transform: scale(1.02);
 }
 
 .price-block .price {
@@ -891,7 +910,6 @@ form .form-actions {
   transform: translate(0, -50%);
   z-index: 0;
   font: 14px/14px FontAwesome;
-  color: #FCD1E5;
   content: "-";
   text-align: center;
 }

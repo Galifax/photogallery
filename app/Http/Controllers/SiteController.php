@@ -7,6 +7,7 @@ use App\Callback;
 use App\Category;
 use App\Gallery;
 use App\Stock;
+use App\CallMe;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -19,8 +20,13 @@ class SiteController extends Controller
 
     public function about()
     {
-        $about = AboutUs::first();
+        $about = AboutUs::where('id', 2)->first();
         return view('about.index', compact('about'));
+    }
+    public function requisites()
+    {
+        $about = AboutUs::where('id', 3)->first();
+        return view('requisites.index', compact('about'));
     }
 
     public function gallery()
@@ -52,6 +58,15 @@ class SiteController extends Controller
     public function sendMessage(Request $request)
     {
         Callback::saveMessage($request);
+        return redirect()->back();
+    }
+
+    public function callMe(Request $request)
+    {
+        $call = new CallMe;
+        $call->name = $request->name;
+        $call->phone = $request->phone;
+        $call->save();
         return redirect()->back();
     }
 
