@@ -39,7 +39,7 @@
 
     <ul id="imageGallery">
     @foreach($gallery as $item)
-        <li data-thumb="{{ $item->getPhoto() }}"
+        <li class="gallfix" data-thumb="{{ $item->getPhoto() }}"
             data-src="{{ $item->getPhoto() }}">
             <img
                 src="{{ $item->getPhoto() }}" width="100%"/>
