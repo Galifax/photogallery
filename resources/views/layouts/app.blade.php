@@ -42,10 +42,10 @@
                     </div> -->
                     <nav class="main-header-nav col-sm-12">
                         <div class="d-flex justify-content-between" style="width:100%;flex-wrap:wrap">
-                            <span class="d-flex"><a class="socials"
+                            <span class="d-flex"><a class="socials" target="_blank"
                                     href="https://www.instagram.com/photozyrina/?r=nametag"><img class="logo"
                                         src="/img/icon-inst.png" alt="#"></a>
-                                <a class="socials" href="https://www.facebook.com/photozyrina/"><img class="logo"
+                                <a class="socials" href="https://www.facebook.com/photozyrina/" target="_blank"><img class="logo"
                                         src="/img/icon-fb.png" alt="#"></a></span>
 
                             <div class="d-flex" style="min-width: 316px;max-width: 360px;width: 100%;justify-content: space-between;align-items: flex-start;">
@@ -69,11 +69,7 @@
                             <li class="mob-none"><a href="{{ route('home') }}" class="text-center"><img class="logo" src="/img/logo.png"
                                         alt="#"><br>NEWBORN END FAMILI PHOTOGRAPHER</a></li>
                             <li><a href="{{ route('gallery') }}">портфолио</a></li>
-<<<<<<< HEAD
                             <li><a href="{{ route('requisites') }}">Реквизиты</a></li>
-=======
-                            <li><a href="#">Реквизиты</a></li>
->>>>>>> 373c1ab6758d717311e2c3e7709066a2c15b38a9
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
                         <button class="mob-menu-btn">Меню</button>
