@@ -47,7 +47,6 @@
                                         src="/img/icon-inst.png" alt="#"></a>
                                 <a class="socials" href="https://www.facebook.com/photozyrina/" target="_blank"><img class="logo"
                                         src="/img/icon-fb.png" alt="#"></a></span>
-
                             <div class="d-flex" style="min-width: 316px;max-width: 360px;width: 100%;justify-content: space-between;align-items: flex-start;">
                                 <div style="margin-right: 5px;">
                                     <button type="button" class="main-btn" data-toggle="modal"
@@ -72,7 +71,10 @@
                             <li><a href="{{ route('requisites') }}">Реквизиты</a></li>
                             <li><a href="{{ route('contacts') }}">контакты</a></li>
                         </ul>
-                        <button class="mob-menu-btn">Меню</button>
+                        <button class="mob-menu-btn">
+                        <img class="logo" src="/img/logo.png"
+                                        alt="#"><br>
+                        Меню</button>
 
                     </nav>
                 </div>
