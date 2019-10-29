@@ -3,6 +3,22 @@ body {
   background: #ebe2e0;
 }
 
+@media screen and (max-width: 991px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+.show-sm {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .show-sm {
+    display: block;
+  }
+}
+
 .mob-none img {
   max-height: 200px;
 }
@@ -113,6 +129,18 @@ a {
   transform: translate(-50%, -50%);
   max-height: 100%;
   width: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .gallfix img {
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    position: absolute;
+    max-height: auto;
+    width: inherit;
+  }
 }
 
 @-webkit-keyframes fadeIn {

@@ -37,7 +37,8 @@
         @endforeach
     </div>
 
-    <ul id="imageGallery">
+    <div class="hidden-sm">
+    <ul id="imageGallery" >
     @foreach($gallery as $item)
         <li class="gallfix" data-thumb="{{ $item->getPhoto() }}"
             data-src="{{ $item->getPhoto() }}">
@@ -46,6 +47,20 @@
         </li>
         @endforeach
     </ul>
+    </div>
+    <div class="show-sm">
+    <ul id="lightgallery" class="grid portfolio-list">
+            @foreach($gallery as $photo)
+                <li class="horizontal gallery-item design" data-src="{{ $photo->getPhoto() }}"
+                    data-sub-html="<h4>{{ $photo->name }}</h4>">
+                    <a href="">
+                        <img class="img-responsive" src="{{ $photo->getPhoto() }}">
+                        <span class="img-title">{{ $photo->name }}</span>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+        </div>
     <div id="pagination">
         {{ $gallery->links() }}
     </div>
